@@ -1,0 +1,48 @@
+[
+    {
+      "id": 1,
+      "imagen": "/images/Indexfixitpc.jpg",
+      "date": "01.11.2022",
+      "title": "Fix it PC",
+      "description": "Diseño y desarrollo de pagina web para la marca FixItPC Punto Fijo.",
+      "route": "https://fixitpc.tech",
+      "labels": {
+        "labels1":"HTML", "labels2":"CSS" 
+      }
+    },
+    {
+      "id": 2,
+      "imagen": "/images/GammingStore.jpg",
+      "date": "02.01.2023",
+      "title": "Gamming Store",
+      "description": "Ecommerce creado como proyecto final en el curso de ReactJs",
+      "route": "https://gammingstore.shop",
+      "labels": {
+        "labels1":"HTML", "labels2":"CSS", "labels3":"ReactJs"
+      }
+    },
+    {
+      "id": 3,
+      "imagen": "/images/woolandcrochet.png",
+      "date": "15.03.2023",
+      "title": "Wool and Crochet",
+      "description": "Pagina web creada con Wordpress para la marca",
+      "route": "https://woolandcrochet.shop",
+      "labels": {
+        "labels1":"HTML", "labels2":"CSS", "labels3":"Wordpress"
+      }
+      
+    },
+    {
+      "id": 4,
+      "imagen": "/images/TECHapp.jpg",
+      "date": "23.04.2023",
+      "title": "TECHapp Conexion Total",
+      "description": "Creado como proyecto durante el curso de Diseño UX/UI",
+      "route": "https://www.behance.net/gallery/173915989/TECHapp-Conexion-total/modules/982385569",
+      "labels": {
+        "labels1":"Figma", "labels2":"Adobe Illustrator", "labels3":"Behance"  
+      }
+    }
+  ]
+  

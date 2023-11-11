@@ -1,0 +1,29 @@
+version: "3.8"
+services:
+    # PHP service
+    app-codeah:
+        build: .
+        container_name: codeah-app
+        working_dir: /var/www/
+        volumes:
+            - ./out:/var/www
+        networks:
+            - app-codeah
+
+    # Nginx service
+    nginx-codeah:
+        image: nginx:1.24.0-alpine
+        container_name: php-nginx-codeah
+        restart: unless-stopped
+        tty: true
+        ports:
+            - 9011:80
+        volumes:
+            - ./out:/var/www
+            - ./nginx/conf.d/:/etc/nginx/conf.d/
+        networks:
+            - app-codeah
+
+networks:
+    app-codeah:
+        driver: bridge
