@@ -7,15 +7,14 @@ const Technologies = () => {
     const isMobile = useMediaQuery('(max-width:800px)');
 
     return (
-        <>
         <Box sx={{
             background: `linear-gradient(to bottom, #1C2026,#2D3540 )`,
             width: '100%',
             color:'white',
-           
         }}>
+        <Box sx={{paddingTop:'4rem'}}>
             <Box sx={{textAlign:'center', }}>
-                <Typography sx={{fontSize: {xs:'24px', md:'30px  '}, justifyContent:'center'}}>Tecnologias y herramientas</Typography>
+                <Typography sx={{fontSize: {xs:'24px', md:'30px  ',}, justifyContent:'center'}}>Tecnologias y herramientas</Typography>
                 <Typography fontWeight='bold' sx={{fontSize:'18px', maxWidth:'800px', margin:'1rem auto'}}>Utilizo tecnologías modernas y eficientes para crear sitios web y aplicaciones de alta calidad y profesionales. A continuación se presentan algunas de las tecnologías y herramientas que utilizo</Typography>
             </Box>
 
@@ -29,7 +28,7 @@ const Technologies = () => {
                 ))}
             </Box>
         </Box>
-        </>
+        </Box>
     );
 };
 

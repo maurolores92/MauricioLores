@@ -43,7 +43,7 @@ function HomeMauro() {
       <Box sx={{ textAlign: 'center', alignItems:'center', margin:'2rem' }}>
             <img src="images/MauricioLores1.jpg" alt="" style={{ width: '300px', height: 'auto', borderRadius: '12px'}} />
         </Box>
-        <Box sx={{ width:'maxContent', margin:'2rem'}}>
+        <Box sx={{ width:'maxContent', marginTop: {xs: '0', lg:'6rem'}}}>
         <Typography fontWeight="bold" sx={{textAlign:'center', fontSize: {xs:'30px', md:'48px  '},}}>
               Mauricio Lores
             </Typography>

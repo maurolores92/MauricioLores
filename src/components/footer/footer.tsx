@@ -11,12 +11,12 @@ const Footer = () => {
 const currentYear = new Date().getFullYear();
 
   return (
-    <>
-      <Box sx={{
-        background: `linear-gradient(to bottom, #2D3540,#0A0B0D )`,
-        height: 'auto',
-        margin:'0 auto'
-      }}>
+    <Box sx={{
+      background: `linear-gradient(to bottom, #2D3540,#0A0B0D )`,
+      height: 'auto',
+      paddingTop:'6rem'
+    }}>
+      <Box sx={{paddinTop:'4rem'}}>
         <Typography fontSize={48} fontWeight='bold'  color={'white'} textAlign="center">Contactame</Typography>
         <Box sx={{ textAlign:'center', margin:'0 auto', justifyContent:'center'}}>
           <Box sx={{ maxWidth:'500px', margin:'2rem auto',}}>
@@ -33,13 +33,13 @@ const currentYear = new Date().getFullYear();
               }}>
               <Grid container spacing={2}>
                 <Grid item xs={12} md={6}>
-                  <TextField label="Nombre" margin="normal" fullWidth  id="filled-basic" variant="filled" sx={{ background: "#A4A5A6" }} />
+                  <TextField label="Nombre" margin="normal" fullWidth  id="filled-basic" variant="filled" sx={{ background: "white" }} />
                 </Grid>
                 <Grid item xs={12} md={6}>
-                  <TextField label="Correo Electrónico" margin="normal" fullWidth  id="filled-basic" variant="filled"  sx={{ background: "#A4A5A6" }} />
+                  <TextField label="Correo Electrónico" margin="normal" fullWidth  id="filled-basic" variant="filled"  sx={{ background: "white" }} />
                 </Grid>
                 <Grid item xs={12}>
-                  <TextField label="Asunto" margin="normal" fullWidth   id="filled-basic" variant="filled"  sx={{ background: "#A4A5A6" }} />
+                  <TextField label="Asunto" margin="normal" fullWidth   id="filled-basic" variant="filled"  sx={{ background: "white" }} />
                 </Grid>
                 <Grid item xs={12}>
                   <TextField
@@ -49,7 +49,7 @@ const currentYear = new Date().getFullYear();
                     margin="normal"
                     id="filled-basic" variant="filled" 
                     fullWidth
-                    sx={{ background: "#A4A5A6" }}
+                    sx={{ background: "white" }}
                   />
                 </Grid>
               </Grid>
@@ -74,7 +74,7 @@ const currentYear = new Date().getFullYear();
           </Typography> 
         </Box>
       </Box>
-    </>
+    </Box>
   );
 };
   

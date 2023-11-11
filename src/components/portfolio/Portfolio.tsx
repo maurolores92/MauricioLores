@@ -34,16 +34,16 @@ const Portfolio = () => {
     }, []);
 
     return (
-      <>
-           <Box sx={{
-          backgroundColor:'#2D3540',
-          backgroundSize: '100% auto',
-          backgroundRepeat:'no-repeat',
-          height: "100%",
-          display: "flex",
-          flexDirection: "column",
-          width: '100%'
-        }}>
+      <Box sx={{
+        backgroundColor:'#2D3540',
+        backgroundSize: '100% auto',
+        backgroundRepeat:'no-repeat',
+        height: "100%",
+        display: "flex",
+        flexDirection: "column",
+        width: '100%'
+      }}>
+           <Box sx={{paddingTop:'4rem'}}>
             <Box sx={{textAlign:'center'}}>
             <Typography color='white' fontWeight='900' sx={{fontSize: {xs:'20px', lg:'48px'}, margin:'2rem auto'}}>Portfolio</Typography>
             <Typography color='white' fontWeight='400' sx={{maxWidth:'800px', margin:'1rem auto'}}>Aquí hay algunos de mis proyectos recientes que muestran mis habilidades y experiencia en desarrollo web. Cada proyecto representa un desafío único que pude superar con creatividad y atención al detalle. ¡Echa un vistazo y descubre lo que puedo hacer por ti!  </Typography>
@@ -88,7 +88,7 @@ const Portfolio = () => {
       </Slider>
       </Box>
         </Box> 
-        </>
+        </Box>
     );
   };
   

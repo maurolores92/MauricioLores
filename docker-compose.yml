@@ -1,17 +1,17 @@
 version: "3.8"
 services:
     # PHP service
-    app-codeah:
+    mauricio-lores:
         build: .
-        container_name: codeah-app
+        container_name: mauricio-lores
         working_dir: /var/www/
         volumes:
             - ./out:/var/www
         networks:
-            - app-codeah
+            - mauricio-lores
 
     # Nginx service
-    nginx-codeah:
+    nginx-mauricio-lores:
         image: nginx:1.24.0-alpine
         container_name: php-nginx-codeah
         restart: unless-stopped
@@ -22,8 +22,8 @@ services:
             - ./out:/var/www
             - ./nginx/conf.d/:/etc/nginx/conf.d/
         networks:
-            - app-codeah
+            - mauricio-lores
 
 networks:
-    app-codeah:
+    mauricio-lores:
         driver: bridge

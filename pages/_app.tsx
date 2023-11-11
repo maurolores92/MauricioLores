@@ -6,6 +6,10 @@ import CssBaseline from '@mui/material/CssBaseline';
 import { CacheProvider, EmotionCache } from '@emotion/react';
 import theme from '../src/theme';
 import createEmotionCache from '../src/createEmotionCache';
+import { useEffect } from "react";
+import { useRouter } from "next/router";
+import ReactGA from "react-ga";
+
 
 // Client-side cache, shared for the whole session of the user in the browser.
 const clientSideEmotionCache = createEmotionCache();
@@ -16,6 +20,23 @@ export interface MyAppProps extends AppProps {
 
 export default function MyApp(props: MyAppProps) {
   const { Component, emotionCache = clientSideEmotionCache, pageProps } = props;
+  const router = useRouter();
+
+  useEffect(() => {
+    ReactGA.initialize("G-KQDVBTR0HB");
+    ReactGA.pageview(window.location.pathname);
+
+    const handleRouteChange = (url: string) => {
+      ReactGA.pageview(url);
+    };
+
+    router.events.on("routeChangeComplete", handleRouteChange);
+
+    return () => {
+      router.events.off("routeChangeComplete", handleRouteChange);
+    };
+  }, []);
+
   return (
     <CacheProvider value={emotionCache}>
       <Head>
