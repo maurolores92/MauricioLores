@@ -9,6 +9,7 @@ import createEmotionCache from '../src/createEmotionCache';
 import { useEffect } from "react";
 import { useRouter } from "next/router";
 import ReactGA from "react-ga";
+import '../styles/globals.css';
 
 
 // Client-side cache, shared for the whole session of the user in the browser.
