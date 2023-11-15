@@ -15,7 +15,7 @@ const Technologies = () => {
         <Box sx={{paddingTop:'4rem'}}>
             <Box sx={{textAlign:'center', }}>
             <Typography color='white' fontWeight='900' sx={{ fontSize: { xs: '20px', lg: '48px' }, margin: '2rem auto', textAlign:'center' }}>Tecnologias y herramientas</Typography>
-                <Typography fontWeight='bold' sx={{fontSize:'18px', maxWidth:'800px', margin:'1rem auto'}}>Utilizo tecnologías modernas y eficientes para crear sitios web y aplicaciones de alta calidad y profesionales. A continuación se presentan algunas de las tecnologías y herramientas que utilizo</Typography>
+            <Typography color='white' fontWeight='400' sx={{ maxWidth: '800px', margin: '1rem auto', textAlign:'jutify' }}>Utilizo tecnologías modernas y eficientes para crear sitios web y aplicaciones de alta calidad y profesionales. A continuación se presentan algunas de las tecnologías y herramientas que utilizo</Typography>
             </Box>
 
             <Box sx={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', maxWidth:'1100px', margin:'0 auto' }} >
@@ -26,8 +26,11 @@ const Technologies = () => {
                         </Box>
                     </Box>
                 ))}
+                
             </Box>
+            
         </Box>
+        
         </Box>
     );
 };

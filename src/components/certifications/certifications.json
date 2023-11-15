@@ -1,0 +1,59 @@
+[
+    {
+      "id": 1,
+      "imagen": "/images/certificados/1.png",
+      "title": "Desarrollo Web",
+      "description": "CODERHOUSE",
+      "date": "21 de noviembre 2022",
+      "route": "https://fixitpc.tech",
+      "labels": {
+        "labels1":"HTML", "labels2":"CSS" 
+      }
+    },
+    {
+      "id": 2,
+      "imagen": "/images/certificados/2.png",
+      "title": "Javascript",
+      "description": "CODERHOUSE",
+      "date": "14 de febrero 2023",
+      "route": "https://gammingstore.shop",
+      "labels": {
+        "labels1":"HTML", "labels2":"CSS", "labels3":"ReactJs"
+      }
+    },
+    {
+      "id": 3,
+      "imagen": "/images/certificados/3.png",
+      "title": "Diseño UX/UI",
+      "description": "CODERHOUSE",
+      "date": "26 de Junio de 2023",
+      "route": "https://woolandcrochet.shop",
+      "labels": {
+        "labels1":"HTML", "labels2":"CSS", "labels3":"Wordpress"
+      }
+      
+    },
+    {
+      "id": 4,
+      "imagen": "/images/certificados/4.jpg",
+      "title": "Desarrollo web con javascript y react Nivel I",
+      "description": "UNGS",
+      "date": "Junio 2023",
+      "route": "https://www.behance.net/gallery/173915989/TECHapp-Conexion-total/modules/982385569",
+      "labels": {
+        "labels1":"Figma", "labels2":"Adobe Illustrator", "labels3":"Behance"  
+      }
+    },
+    {
+      "id": 5,
+      "imagen": "/images/certificados/5.png",
+      "title": "Desarrollo web con javascript y react Nivel II",
+      "description": "UNGS",
+      "date": "11 de Octubre 2023",
+      "route": "https://www.behance.net/gallery/173915989/TECHapp-Conexion-total/modules/982385569",
+      "labels": {
+        "labels1":"Figma", "labels2":"Adobe Illustrator", "labels3":"Behance"  
+      }
+    }
+  ]
+  

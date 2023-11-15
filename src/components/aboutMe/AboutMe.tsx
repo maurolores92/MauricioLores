@@ -17,7 +17,9 @@ function AboutMe() {
         Descargar CV 
       </Button>
         </a>
+        
       </Box>
+      
   </Box>
 
     );
