@@ -26,11 +26,10 @@ const Certifications = () => {
 
   return (
     <Box sx={{ backgroundColor: '#2D3540', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-      <Box sx={{ paddingTop: '4rem', maxWidth: { md: '1000px', lg: '1200px' }, width: '100%' }}>
-        <Typography color='white' fontWeight='900' sx={{ fontSize: { xs: '20px', lg: '48px' }, margin: '2rem auto', textAlign: 'center' }}>Certificaciones</Typography>
-        <Typography color='white' fontWeight='400' sx={{ maxWidth: '800px', margin: '1rem auto', textAlign: 'center' }}></Typography>
+      <Box sx={{ paddingTop: {xs:'0', lg:'4rem'}, maxWidth: { md: '1000px', lg: '1200px' }, width: '100%' }}>
+        <Typography color='white' fontWeight='900' sx={{ fontSize: { xs: '28px', lg: '48px' }, margin:  {xs:'0 auto', lg:'2rem auto'}, textAlign: 'center' }}>Certificaciones</Typography>
       </Box>
-      <Box sx={{ display: 'flex', justifyContent: 'space-evenly', margin: '4rem 0 ', flexWrap: 'wrap' }}>
+      <Box sx={{ display: 'flex', justifyContent: 'space-evenly', margin: {xs:'1rem auto', lg:'4rem auto'}, flexWrap: 'wrap' }}>
         {certificationsData.map((certification, index) => (
           <Box key={certification.id} style={{ marginRight: index < certificationsData.length - 1 ? '16px' : '0' }} className='card'>
             <div onClick={() => handleClickOpen(certification)} style={{ cursor: 'pointer' }}>

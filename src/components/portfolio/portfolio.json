@@ -16,7 +16,7 @@
       "date": "02.01.2023",
       "title": "Gamming Store",
       "description": "Ecommerce creado como proyecto final en el curso de ReactJs",
-      "route": "https://gammingstore.shop",
+      "route": "https://maurolores92.github.io/Gamming-Store/",
       "labels": {
         "labels1":"HTML", "labels2":"CSS", "labels3":"ReactJs"
       }
@@ -37,9 +37,8 @@
       "id": 4,
       "imagen": "/images/TECHapp.jpg",
       "date": "23.04.2023",
-      "title": "TECHapp Conexion Total",
+      "title": "TECHapp",
       "description": "Creado como proyecto durante el curso de Diseño UX/UI",
-      "route": "https://www.behance.net/gallery/173915989/TECHapp-Conexion-total/modules/982385569",
       "labels": {
         "labels1":"Figma", "labels2":"Adobe Illustrator", "labels3":"Behance"  
       }

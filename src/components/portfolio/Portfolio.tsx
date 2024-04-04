@@ -8,7 +8,7 @@ const Portfolio = () => {
     return (
       <Box sx={{ backgroundColor: '#2D3540', height: "100%", display: "flex", flexDirection: "column", alignItems: 'center', }}>
         <Box sx={{ paddingTop: '4rem', maxWidth: { md: '1000px', lg: '1200px' }, width: '100%' }}>
-          <Typography color='white' fontWeight='900' sx={{ fontSize: { xs: '20px', lg: '48px' }, margin: '2rem auto', textAlign:'center' }}>Portfolio</Typography>
+          <Typography color='white' fontWeight='900' sx={{ fontSize: { xs: '28px', lg: '48px' }, margin: '2rem auto', textAlign:'center' }}>Portfolio</Typography>
           <Typography color='white' fontWeight='400' sx={{ maxWidth: '800px', margin: '1rem auto', textAlign:'center' }}>Aquí hay algunos de mis proyectos recientes que muestran mis habilidades y experiencia en desarrollo web. Cada proyecto representa un desafío único que pude superar con creatividad y atención al detalle. ¡Echa un vistazo y descubre lo que puedo hacer por ti!  </Typography>
         </Box>
         <Box sx={{ display: 'flex', justifyContent: 'space-evenly', margin: '4rem 0 4rem 0', flexWrap: 'wrap', }}>
