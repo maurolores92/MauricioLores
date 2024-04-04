@@ -19,7 +19,7 @@ const Portfolio = () => {
     const handleResize = () => {
       if (window.innerWidth >= 1224) {
         setSlidesToShow(3); 
-      } else if (window.innerWidth >= 730) {
+      } else if (window.innerWidth >= 800) {
         setSlidesToShow(2);
       } else {
         setSlidesToShow(1);
@@ -46,7 +46,7 @@ const Portfolio = () => {
           <Typography color='white' fontWeight='900' sx={{ fontSize: { xs: '28px', lg: '48px' }, margin: '2rem auto', textAlign:'center' }}>Portfolio</Typography>
           <Typography color='white' fontWeight='400' sx={{ maxWidth: '800px', margin: '1rem auto', textAlign:'center' }}>Aquí hay algunos de mis proyectos recientes que muestran mis habilidades y experiencia en desarrollo web. Cada proyecto representa un desafío único que pude superar con creatividad y atención al detalle. ¡Echa un vistazo y descubre lo que puedo hacer por ti!  </Typography>
         </Box>
-        <Box sx={{maxWidth:'1400px', margin:'0 auto'}}>
+        <Box sx={{width: {xs: '390px', md: '800px', lg:'1400px'}, margin:'2rem auto'}}>
         <Slider {...settings}>
           {portfolioData.map((servicio, index) => (
               <Card key={servicio.id} sx={{ margin:'1rem auto', borderRadius:'12px', width:'338px', height:'463px'  }} className="container">
