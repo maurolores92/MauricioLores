@@ -34,7 +34,7 @@ const theme = createTheme({
     }
   },
   typography: {
-    fontFamily: roboto.style.fontFamily,
+    fontFamily: ['Consolas', 'monospace'].join(','),
     button: {
       textTransform: 'none',
     },
