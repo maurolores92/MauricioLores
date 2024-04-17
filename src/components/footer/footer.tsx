@@ -63,7 +63,7 @@ const currentYear = new Date().getFullYear();
             <a href="https://www.linkedin.com/in/mauriciolores" target="_blank"><LinkedInIcon style={{margin:'10px', fontSize:'35px', color:'white'}}/></a>
             <a href="https://https://github.com/maurolores92" target="_blank"><GitHubIcon style={{margin:'10px', fontSize:'35px', color:'white'}}/></a>
             <a href="https://t.me/Maurolores" target="_blank"><TelegramIcon style={{margin:'10px', fontSize:'35px', color:'white'}}/></a>
-            <a href="https://www.instagram.com/maurolores92/" target="_blank"><InstagramIcon style={{margin:'10px', fontSize:'35px', color:'white'}}/></a>
+            <a href="https://www.instagram.com/mlores.dev/" target="_blank"><InstagramIcon style={{margin:'10px', fontSize:'35px', color:'white'}}/></a>
             <a href="https://www.facebook.com/mauricio.lores" target="_blank"><FacebookIcon style={{margin:'10px', fontSize:'35px', color:'white'}}/></a>
               </Box>
         </Box>

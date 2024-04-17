@@ -44,7 +44,7 @@ const Portfolio = () => {
         }}>
         <Box sx={{ paddingTop: '4rem', maxWidth: { md: '1000px', lg: '1200px' }, width: '100%' }}>
           <Typography color='white' fontWeight='900' sx={{ fontSize: { xs: '28px', lg: '48px' }, margin: '2rem auto', textAlign:'center' }}>Portfolio</Typography>
-          <Typography color='white' fontWeight='400' sx={{ maxWidth: '800px', margin: '1rem auto', textAlign:'center' }}>Aquí hay algunos de mis proyectos recientes que muestran mis habilidades y experiencia en desarrollo web. Cada proyecto representa un desafío único que pude superar con creatividad y atención al detalle. ¡Echa un vistazo y descubre lo que puedo hacer por ti!  </Typography>
+          <Typography color='white' fontWeight='400' sx={{ maxWidth: '800px', margin: '1rem auto', textAlign:'center' }}>Bienvenido a mi portafolio, donde encontrarás una selección de mis proyectos más recientes y representativos. Cada proyecto aquí no solo es un testimonio de mis habilidades técnicas, sino también un reflejo de mi dedicación a superar desafíos con creatividad y atención al detalle. ¡Te invito a explorar y descubrir cómo puedo convertir tus ideas en realidad!</Typography>
         </Box>
         <Box sx={{width: {xs: '390px', md: '800px', lg:'1400px'}, margin:'2rem auto'}}>
         <Slider {...settings}>

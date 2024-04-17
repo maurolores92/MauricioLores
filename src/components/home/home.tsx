@@ -52,7 +52,7 @@ function HomeMauro() {
             </Typography>
             
             <Typography sx={{ maxWidth:'600px', textAlign:'center', margin:'1rem auto', fontSize: {xs:'16px', md:'18px  '}}}>
-            Soy desarrollador Front End en constante formacion, con conocimientos en Diseño UX/UI, desarrollo web, Javascript, ReactJs. Actualmente diseño, rediseño y programo nuevos proyectos y sitios de aplicaciones web, del lado del cliente (Front-end). Continuamente estoy aprendiendo y adquiriendo nuevas habilidades en función a las actuales y futuras demandas y tendencias tecnológicas en el campo del diseño y desarrollo de aplicaciones web en general.
+            ¡Hola! Soy Mauricio Lores, un apasionado desarrollador Front End en constante búsqueda de la excelencia. Con experiencia en Diseño UX/UI, desarrollo web, Javascript, Typescript, ReactJs y NextJs, me dedico a diseñar, rediseñar y programar proyectos innovadores y atractivos en el mundo del desarrollo web del lado del cliente. Estoy comprometido con el aprendizaje continuo y la adquisición de nuevas habilidades para mantenerme al día con las últimas tendencias y demandas tecnológicas. ¡Déjame ayudarte a llevar tus ideas al siguiente nivel!
             </Typography>
             <Button
             color="primary"

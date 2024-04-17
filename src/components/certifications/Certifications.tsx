@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Typography, Box, Dialog, DialogContent, Button } from '@mui/material';
 import certificationsData from './certifications.json';
+import Slider from 'react-slick';
 
 type Certification = {
   id: number;
@@ -13,6 +14,7 @@ type Certification = {
 
 const Certifications = () => {
   const [open, setOpen] = useState(false);
+  const [slidesToShow, setSlidesToShow] = useState(1);
   const [selectedCertification, setSelectedCertification] = useState<Certification | null>(null);
 
   const handleClickOpen = (certification: Certification) => {
@@ -24,24 +26,53 @@ const Certifications = () => {
     setOpen(false);
   };
 
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToScroll: slidesToShow, // Ajustado a slidesToShow
+    slidesToShow: slidesToShow
+  };
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 1224) {
+        setSlidesToShow(3); 
+      } else if (window.innerWidth >= 800) {
+        setSlidesToShow(2);
+      } else {
+        setSlidesToShow(1);
+      }
+    };
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize); 
+    };
+  }, []);
+
   return (
-    <Box sx={{ backgroundColor: '#2D3540', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+    <>  
+    <Box sx={{ 
+      backgroundColor: '#2D3540', 
+      display: 'flex', 
+      flexDirection: 'column', 
+      alignItems: 'center' 
+      }}>
       <Box sx={{ paddingTop: {xs:'0', lg:'4rem'}, maxWidth: { md: '1000px', lg: '1200px' }, width: '100%' }}>
         <Typography color='white' fontWeight='900' sx={{ fontSize: { xs: '28px', lg: '48px' }, margin:  {xs:'0 auto', lg:'2rem auto'}, textAlign: 'center' }}>Certificaciones</Typography>
+        <Typography color='white' fontWeight='400' sx={{ maxWidth: '800px', margin: '1rem auto', textAlign:'center' }}>Mi compromiso con la excelencia y el aprendizaje continuo se refleja en las certificaciones que he obtenido en el campo de la programacion. Estas certificaciones son el resultado de mi dedicación a mejorar mis habilidades y mantenerme al día con las últimas tecnologías y mejores prácticas. </Typography>
       </Box>
-      <Box sx={{ display: 'flex', justifyContent: 'space-evenly', margin: {xs:'1rem auto', lg:'4rem auto'}, flexWrap: 'wrap' }}>
+      <Box sx={{width: {xs: '390px', md: '800px', lg:'1400px'}, margin:'2rem auto'}}>
+      <Slider {...settings}>
         {certificationsData.map((certification, index) => (
           <Box key={certification.id} style={{ marginRight: index < certificationsData.length - 1 ? '16px' : '0' }} className='card'>
             <div onClick={() => handleClickOpen(certification)} style={{ cursor: 'pointer' }}>
               <img src={certification.imagen} alt={certification.title} style={{ width: '280px', height: '200px', borderRadius: '12px', margin: '1rem auto' }} />
-              <Box className="card__content">
-                <Typography variant='h4' className="card__title">{certification.title}</Typography>
-                <Typography variant='body1' className="card__description">{certification.description}</Typography>
-                <Typography variant='body1' className="card__description">{certification.date}</Typography>
-              </Box>
             </div>
           </Box>
         ))}
+        </Slider>
       </Box>
 
       <Dialog open={open} onClose={handleClose}>
@@ -60,6 +91,7 @@ const Certifications = () => {
         </DialogContent>
       </Dialog>
     </Box>
+    </>
   );
 };
 
