@@ -1,6 +1,28 @@
 [
     {
       "id": 1,
+      "imagen": "/images/thewinenation.png",
+      "date": "01.11.2022",
+      "title": "The Wine Nation",
+      "description": "Pagina web creada para nuestros clientes de The Wine Nation.",
+      "route": "https://thewinenation.com/",
+      "labels": {
+        "labels1":"Typescript", "labels2":"NextJs" , "labels3":"NodeJs"
+      }
+    },
+    {
+      "id": 2,
+      "imagen": "/images/lacostillita.png",
+      "date": "01.11.2022",
+      "title": "La Costillita",
+      "description": "Pagina web creada para nuestros clientes de Parrillas La Costillita.",
+      "route": "https://lacostillita.com/",
+      "labels": {
+        "labels1":"Wordpress", "labels2":"PHP"
+      }
+    },
+    {
+      "id": 3,
       "imagen": "/images/Indexfixitpc.jpg",
       "date": "01.11.2022",
       "title": "Fix it PC",
@@ -11,7 +33,7 @@
       }
     },
     {
-      "id": 2,
+      "id": 4,
       "imagen": "/images/GammingStore.jpg",
       "date": "02.01.2023",
       "title": "Gamming Store",
@@ -22,25 +44,14 @@
       }
     },
     {
-      "id": 3,
-      "imagen": "/images/woolandcrochet.png",
-      "date": "15.03.2023",
-      "title": "Wool and Crochet",
-      "description": "Pagina web creada con Wordpress para la marca",
-      "route": "https://woolandcrochet.shop",
-      "labels": {
-        "labels1":"HTML", "labels2":"CSS", "labels3":"Wordpress"
-      }
-      
-    },
-    {
-      "id": 4,
+      "id": 6,
       "imagen": "/images/TECHapp.jpg",
       "date": "23.04.2023",
       "title": "TECHapp",
       "description": "Creado como proyecto durante el curso de Diseño UX/UI",
+      "route": "https://www.behance.net/gallery/173915989/TECHapp-Conexion-total",
       "labels": {
-        "labels1":"Figma", "labels2":"Adobe Illustrator", "labels3":"Behance"  
+        "labels1":"Figma", "labels2":"Illustrator", "labels3":"Behance"  
       }
     }
   ]
