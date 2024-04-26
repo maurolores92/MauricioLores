@@ -1,4 +1,4 @@
-import * as React from 'react';
+
 import Head from 'next/head';
 import { AppProps } from 'next/app';
 import { ThemeProvider } from '@mui/material/styles';
@@ -56,6 +56,17 @@ export default function MyApp(props: MyAppProps) {
         <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png" />
         <link rel="manifest" href="assets/img/site.webmanifest" />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-TTD5T0J839"></script>
+        <script dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-TTD5T0J839');
+          `
+        }} />
+        
       </Head>
       <ThemeProvider theme={theme}>
         {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
