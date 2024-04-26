@@ -17,7 +17,7 @@ services:
         restart: unless-stopped
         tty: true
         ports:
-            - 9011:80
+            - 9020:80
         volumes:
             - ./out:/var/www
             - ./nginx/conf.d/:/etc/nginx/conf.d/
