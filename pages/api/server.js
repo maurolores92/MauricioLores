@@ -1,3 +1,3 @@
-const sendEmailHandler = require('./api/send-email');
+const sendEmailHandler = require('./send-email');
 
 module.exports = sendEmailHandler;
