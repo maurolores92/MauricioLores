@@ -9,16 +9,16 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+  const [openConfirmDialog, setOpenConfirmDialog] = useState(false);
+  const [emailSent, setEmailSent] = useState(false);
+  const [isFocused, setIsFocused] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     subject: '',
     message: ''
   });
-  const [openConfirmDialog, setOpenConfirmDialog] = useState(false);
-  const [emailSent, setEmailSent] = useState(false);
-  const [isFocused, setIsFocused] = useState(false);
-
+  
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
@@ -40,6 +40,12 @@ const Footer = () => {
 
       if (response.ok) {
         setEmailSent(true);
+        setFormData({
+          name: '',
+          email: '',
+          subject: '',
+          message: ''
+        });
       } else {
         console.error('Error al enviar el correo electrónico');
       }
@@ -171,6 +177,33 @@ const Footer = () => {
           </Typography> 
         </Box>
       </Box>
+      {/* Diálogo de confirmación */}
+      <Dialog open={openConfirmDialog} onClose={handleCloseDialog}>
+        <DialogTitle>¿Enviar correo electrónico?</DialogTitle>
+        <DialogContent>
+          <Typography>¿Estás seguro de que deseas enviar este correo electrónico?</Typography>
+        </DialogContent>
+        <DialogActions>
+          <Button onClick={handleCloseDialog} color="primary">
+            Cancelar
+          </Button>
+          <Button onClick={handleConfirmSend} color="primary">
+            Enviar
+          </Button>
+        </DialogActions>
+      </Dialog>
+      {/* Diálogo de correo enviado */}
+      <Dialog open={emailSent} onClose={() => setEmailSent(false)}>
+        <DialogTitle>Mensaje enviado</DialogTitle>
+        <DialogContent>
+          <Typography>¡El correo electrónico ha sido enviado correctamente!</Typography>
+        </DialogContent>
+        <DialogActions>
+          <Button onClick={() => setEmailSent(false)} color="primary">
+            Cerrar
+          </Button>
+        </DialogActions>
+      </Dialog>
     </Box>
   );
 };
