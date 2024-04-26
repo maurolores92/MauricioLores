@@ -30,7 +30,7 @@ function HomeMauro() {
     <Box
       sx={{
         backgroundColor:'#0A0B0D',
-        background: `linear-gradient(to bottom, #0A0B0D, #1C2026)`,
+        background: `linear-gradient(to bottom, #151f42, #1e2958)`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         display: "flex",
@@ -41,17 +41,12 @@ function HomeMauro() {
       }}
     >
       <Box sx={{ textAlign: 'center', alignItems:'center', margin:'2rem' }}>
-            <img src="images/MauricioLores1.svg " alt="" style={{ width: '300px', height: 'auto', borderRadius: '12px'}} />
+            <img src="images/MauricioLores1.svg " alt="" style={{ width: '320px', height: 'auto', borderRadius: '12px'}} />
         </Box>
         <Box sx={{ width:'maxContent', marginTop: {xs: '0', lg:'6rem'}}}>
-        <Typography fontWeight="bold" sx={{textAlign:'center', fontSize: {xs:'30px', md:'48px  '},}}>
-              Mauricio Lores
-            </Typography>
-            <Typography fontWeight="bold" sx={{textAlign:'center', fontSize: {xs:'30px', md:'48px  '},}}>
-              Front End Developer
-            </Typography>
+          <img src="images/logo/logo-transparente.svg " alt="" />
             
-            <Typography sx={{ maxWidth:'600px', textAlign:'center', margin:'1rem auto', fontSize: {xs:'16px', md:'18px  '}}}>
+            <Typography sx={{ maxWidth:'680px', textAlign:'center', margin:'1rem auto', fontSize: {xs:'16px', md:'18px  '}}}>
             ¡Hola! Soy Mauricio Lores, un apasionado desarrollador Front End en constante búsqueda de la excelencia. Con experiencia en Diseño UX/UI, desarrollo web, Javascript, Typescript, ReactJs y NextJs, me dedico a diseñar, rediseñar y programar proyectos innovadores y atractivos en el mundo del desarrollo web del lado del cliente. Estoy comprometido con el aprendizaje continuo y la adquisición de nuevas habilidades para mantenerme al día con las últimas tendencias y demandas tecnológicas. ¡Déjame ayudarte a llevar tus ideas al siguiente nivel!
             </Typography>
             <Button
@@ -62,9 +57,12 @@ function HomeMauro() {
                 justifyContent: 'center',
                 margin: '2rem auto',
                 borderRadius: '6px',
-                "&:hover": {
-                  backgroundColor: '#A4A5A6',
+                backgroundColor: '#b2b4b2',
                   color: '#2D3540',
+                "&:hover": {
+                  backgroundColor: '#151f42',
+                  color: ' #b2b4b2',
+                  border:'solid 1px #b2b4b2'
                 },
               }}
               onClick={handleDownloadClick}

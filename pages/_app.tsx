@@ -43,13 +43,13 @@ export default function MyApp(props: MyAppProps) {
     <CacheProvider value={emotionCache}>
       <Head>
         <meta name="viewport" content="initial-scale=1, width=device-width" />
-        <meta name="description" content="Creamos tu pagina web desde 0, usando todos las herramientas disponibles y actualizadas para que tengas un " />
-        <meta name="keywords" content="Creamos tu pagina web desde 0, diseñamos, rediseñamos y programamos tu sitio web, del lado del cliente. Usando las habilidades y nuevas tendencias tecnologicas en el campo del diseño y desarrollo de aplicaciones web en general." />
-        <meta property="og:title" content="Mauricio Lores | Front End Developer" />
-        <meta property="og:description" content="Creamos tu pagina web desde 0, diseñamos, rediseñamos y programamos tu sitio web, del lado del cliente. Usando las habilidades y nuevas tendencias tecnologicas en el campo del diseño y desarrollo de aplicaciones web en general. " />
+        <meta name="description" content="Mauricio Lores | Desarrollador Frontend - Diseñando y creando sitios web a medida para dar vida a tus ideas. Con experiencia en las últimas tecnologías y tendencias del desarrollo web, estoy aquí para ayudarte a construir una presencia en línea única y efectiva para tu proyecto o negocio." />
+        <meta name="keywords" content="desarrollo web, diseño web, frontend, diseño de sitios web, programación web, desarrollo de aplicaciones web, tecnologías web, desarrollador frontend, diseño responsivo, HTML, CSS, JavaScript, NextJs, React, NodeJs desarrollo web a medida"/>
+        <meta property="og:title" content="Desarrollador Frontend | Diseño y Programación Web | Mauricio Lores"/>
+        <meta property="og:description" content="Mauricio Lores | Desarrollador Frontend - Diseñando y creando sitios web a medida para dar vida a tus ideas. Con experiencia en las últimas tecnologías y tendencias del desarrollo web, estoy aquí para ayudarte a construir una presencia en línea única y efectiva para tu proyecto o negocio." />
         <meta property="og:image" content="/images/logo/logofondoblanco-removebg-preview.png" />
-        <meta property="og:url" content="https://maurolores92.github.io/portafolio/" />
-        <meta property="og:site_name" content="Mauricio Lores | Developer Front-End" />
+        <meta property="og:url" content="https://www.mauriciolores.com.ar/" />
+        <meta property="og:site_name" content="Desarrollador Frontend | Diseño y Programación Web | Mauricio Lores" />
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="es_ES" />
         <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png" />

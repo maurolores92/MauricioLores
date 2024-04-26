@@ -8,7 +8,7 @@ const Technologies = () => {
 
     return (
         <Box sx={{
-            background: `linear-gradient(to bottom, #1C2026,#2D3540 )`,
+            background: `linear-gradient(to bottom, #1e2958,#151f42 )`,
             width: '100%',
             color:'white',
         }}>

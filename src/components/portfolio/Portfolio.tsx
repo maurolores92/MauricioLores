@@ -35,7 +35,7 @@ const Portfolio = () => {
     return (
       <>      
       <Box sx={{ 
-        backgroundColor: '#2D3540', 
+        backgroundColor: '#151f42', 
         height: "100%", 
         display: "flex", 
         flexDirection: "column", 
@@ -70,7 +70,7 @@ const Portfolio = () => {
               </Box>
                 <Box className="button-wrapper"> 
                 <a href={servicio.route} target="_blank" style={{ textDecoration: 'none' }}>
-                  <Button variant='contained' >Visitar</Button>
+                  <Button variant='contained' color="secondary">Visitar</Button>
                   </a>
                 </Box>
               </Box>

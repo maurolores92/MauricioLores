@@ -54,7 +54,7 @@ const Certifications = () => {
   return (
     <>  
     <Box sx={{ 
-      backgroundColor: '#2D3540', 
+      backgroundColor: '#151f42', 
       display: 'flex', 
       flexDirection: 'column', 
       alignItems: 'center' ,
@@ -83,7 +83,7 @@ const Certifications = () => {
               <Typography variant='h4' sx={{ marginTop: '1rem' }}>{selectedCertification.title}</Typography>
               <Typography variant='body1'>{selectedCertification.description}</Typography>
               <Typography variant='body1'>{selectedCertification.date}</Typography>
-              <Button onClick={handleClose} variant="contained" sx={{ marginTop: '1rem' }}>
+              <Button onClick={handleClose} variant="contained" color="secondary" sx={{ marginTop: '1rem' }}>
                 Cerrar
               </Button>
             </Box>
