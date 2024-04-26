@@ -10,6 +10,7 @@ import { useEffect } from "react";
 import { useRouter } from "next/router";
 import ReactGA from "react-ga";
 import '../styles/globals.css';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 
 // Client-side cache, shared for the whole session of the user in the browser.

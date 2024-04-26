@@ -1,7 +1,7 @@
 [
     {
       "id": 1,
-      "imagen": "/images/thewinenation.png",
+      "imagen": "/images/thewinenation.svg",
       "date": "01.11.2022",
       "title": "The Wine Nation",
       "description": "Pagina web creada para nuestros clientes de The Wine Nation.",
@@ -12,7 +12,7 @@
     },
     {
       "id": 2,
-      "imagen": "/images/lacostillita.png",
+      "imagen": "/images/lacostillita.svg",
       "date": "01.11.2022",
       "title": "La Costillita",
       "description": "Pagina web creada para nuestros clientes de Parrillas La Costillita.",
@@ -23,7 +23,7 @@
     },
     {
       "id": 3,
-      "imagen": "/images/Indexfixitpc.jpg",
+      "imagen": "/images/Indexfixitpc.svg",
       "date": "01.11.2022",
       "title": "Fix it PC",
       "description": "Diseño y desarrollo de pagina web para la marca FixItPC Punto Fijo.",
@@ -34,7 +34,7 @@
     },
     {
       "id": 4,
-      "imagen": "/images/GammingStore.jpg",
+      "imagen": "/images/GammingStore..svg",
       "date": "02.01.2023",
       "title": "Gamming Store",
       "description": "Ecommerce creado como proyecto final en el curso de ReactJs",
@@ -45,7 +45,7 @@
     },
     {
       "id": 6,
-      "imagen": "/images/TECHapp.jpg",
+      "imagen": "/images/TECHapp.svg",
       "date": "23.04.2023",
       "title": "TECHapp",
       "description": "Creado como proyecto durante el curso de Diseño UX/UI",

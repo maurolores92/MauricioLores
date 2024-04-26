@@ -1,7 +1,7 @@
 [
     {
       "id": 1,
-      "imagen": "/images/certificados/1.png",
+      "imagen": "/images/certificados/1.svg",
       "title": "Desarrollo Web",
       "description": "CODERHOUSE",
       "date": "21 de noviembre 2022",
@@ -12,7 +12,7 @@
     },
     {
       "id": 2,
-      "imagen": "/images/certificados/2.png",
+      "imagen": "/images/certificados/2.svg",
       "title": "Javascript",
       "description": "CODERHOUSE",
       "date": "14 de febrero 2023",
@@ -23,7 +23,7 @@
     },
     {
       "id": 3,
-      "imagen": "/images/certificados/3.png",
+      "imagen": "/images/certificados/3.svg",
       "title": "Diseño UX/UI",
       "description": "CODERHOUSE",
       "date": "26 de Junio de 2023",
@@ -35,7 +35,7 @@
     },
     {
       "id": 4,
-      "imagen": "/images/certificados/4.jpg",
+      "imagen": "/images/certificados/4.svg",
       "title": "Desarrollo web con javascript y react Nivel I",
       "description": "UNGS",
       "date": "Junio 2023",
@@ -46,7 +46,7 @@
     },
     {
       "id": 5,
-      "imagen": "/images/certificados/5.png",
+      "imagen": "/images/certificados/5.svg",
       "title": "Desarrollo web con javascript y react Nivel II",
       "description": "UNGS",
       "date": "11 de Octubre 2023",
