@@ -13,7 +13,7 @@ services:
     # Nginx service
     nginx-mauricio-lores:
         image: nginx:1.24.0-alpine
-        container_name: php-nginx-codeah
+        container_name: php-nginx-mauricio-lores
         restart: unless-stopped
         tty: true
         ports:
