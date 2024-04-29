@@ -11,7 +11,7 @@ const Portfolio = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToScroll: slidesToShow, // Ajustado a slidesToShow
+    slidesToScroll: slidesToShow, 
     slidesToShow: slidesToShow
   };
 
