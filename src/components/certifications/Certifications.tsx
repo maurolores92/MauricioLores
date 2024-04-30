@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Typography, Box, Dialog, DialogContent, Button } from '@mui/material';
 import certificationsData from './certifications.json';
 import Slider from 'react-slick';

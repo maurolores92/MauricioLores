@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from 'react';
-import { Box, Button, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import logosData from './logos.json';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { motion } from "framer-motion";

@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import portfolioData from './portfolio.json';
-import { Card, CardContent, Typography,  Box, Button, Divider} from '@mui/material';
+import { Card, CardContent, Typography,  Box, Button} from '@mui/material';
 
 const Portfolio = () => {
   const [slidesToShow, setSlidesToShow] = useState(1);

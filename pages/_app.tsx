@@ -10,10 +10,7 @@ import { useEffect } from "react";
 import { useRouter } from "next/router";
 import ReactGA from "react-ga";
 import '../styles/globals.css';
-import { SpeedInsights } from "@vercel/speed-insights/next"
 
-
-// Client-side cache, shared for the whole session of the user in the browser.
 const clientSideEmotionCache = createEmotionCache();
 
 export interface MyAppProps extends AppProps {
@@ -44,7 +41,7 @@ export default function MyApp(props: MyAppProps) {
       <Head>
         <meta name="viewport" content="initial-scale=1, width=device-width" />
         <meta name="description" content="Mauricio Lores | Desarrollador Frontend - Diseñando y creando sitios web a medida para dar vida a tus ideas. Con experiencia en las últimas tecnologías y tendencias del desarrollo web, estoy aquí para ayudarte a construir una presencia en línea única y efectiva para tu proyecto o negocio." />
-        <meta name="keywords" content="desarrollo web, diseño web, frontend, diseño de sitios web, programación web, desarrollo de aplicaciones web, tecnologías web, desarrollador frontend, diseño responsivo, HTML, CSS, JavaScript, NextJs, React, NodeJs desarrollo web a medida"/>
+        <meta name="keywords" content="Desarrollo web, diseño web, frontend, diseño de sitios web, programación web, desarrollo de aplicaciones web, tecnologías web, desarrollador frontend, diseño responsivo, HTML, CSS, JavaScript, NextJs, React, NodeJs desarrollo web a medida"/>
         <meta property="og:title" content="Desarrollador Frontend | Diseño y Programación Web | Mauricio Lores"/>
         <meta property="og:description" content="Mauricio Lores | Desarrollador Frontend - Diseñando y creando sitios web a medida para dar vida a tus ideas. Con experiencia en las últimas tecnologías y tendencias del desarrollo web, estoy aquí para ayudarte a construir una presencia en línea única y efectiva para tu proyecto o negocio." />
         <meta property="og:image" content="http://imgfz.com/i/xsgHleE.png" />
@@ -52,20 +49,12 @@ export default function MyApp(props: MyAppProps) {
         <meta property="og:site_name" content="Desarrollador Frontend | Diseño y Programación Web | Mauricio Lores" />
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="es_ES" />
-        <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png" />
-        <link rel="manifest" href="assets/img/site.webmanifest" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png" />
+        <link rel="manifest" href="/images/favicon/site.webmanifest" />
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-TTD5T0J839"></script>
-        <script dangerouslySetInnerHTML={{
-          __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'G-TTD5T0J839');
-          `
-        }} />
+        <script dangerouslySetInnerHTML={{__html: `window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-TTD5T0J839');`}}/>
         
       </Head>
       <ThemeProvider theme={theme}>
