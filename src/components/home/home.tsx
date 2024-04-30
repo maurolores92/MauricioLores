@@ -144,13 +144,13 @@ function HomeMauro() {
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }} 
         transition={{ duration: 1 }}
-        style={{ maxWidth: '880px', marginTop: '6rem' }}
+        style={{ maxWidth: '880px', marginTop: '2rem' }}
       >
-        <Box sx={{ maxWidth: '600px', margin: '2rem auto' }}>
+        <Box sx={{ maxWidth: '600px', margin: '3rem auto' }}>
           <img src="images/logo/logo-transparente.svg " alt="" />
         </Box>
 
-        <Typography fontWeight="bold" sx={{ textAlign: 'center', margin: '2rem auto', fontSize: { xs: '16px', md: '22px  ' } }}>
+        <Typography fontWeight="bold" sx={{ textAlign: 'center', margin: '3rem auto', fontSize: { xs: '16px', md: '22px  ' } }}>
           ¡Hola! Soy Mauricio Lores, un apasionado desarrollador Front End en constante búsqueda de la excelencia. Con experiencia en Diseño UX/UI, desarrollo web, Javascript, Typescript, ReactJs y NextJs, me dedico a diseñar, rediseñar y programar proyectos innovadores y atractivos en el mundo del desarrollo web del lado del cliente. Estoy comprometido con el aprendizaje continuo y la adquisición de nuevas habilidades para mantenerme al día con las últimas tendencias y demandas tecnológicas. ¡Déjame ayudarte a llevar tus ideas al siguiente nivel!
         </Typography>
 
@@ -159,7 +159,7 @@ function HomeMauro() {
           sx={{
             display: 'flex',
             justifyContent: 'center',
-            margin: '2rem auto',
+            margin: '3rem auto',
             borderRadius: '6px',
             backgroundColor: '#b2b4b2',
             color: '#2D3540',

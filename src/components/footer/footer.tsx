@@ -79,7 +79,7 @@ const Footer = () => {
         <Typography fontSize={48} fontWeight='bold'  color={'white'} textAlign="center">Contactame</Typography>
         <Box sx={{ textAlign:'center', margin:'0 auto', justifyContent:'center'}}>
           <Box sx={{ maxWidth:'500px', margin:'2rem auto',}}>
-            <Typography  color={"white"}>No dudes en ponerte en contacto conmigo, siempre estoy dispuesto a hablar de nuevos proyectos, ideas creativas u oportunidades para participar en tus proyectos.</Typography>
+            <Typography  color={"white"} sx={{fontSize: { xs: '14px', lg: '18px' }, }}>No dudes en ponerte en contacto conmigo, siempre estoy dispuesto a hablar de nuevos proyectos, ideas creativas u oportunidades para participar en tus proyectos.</Typography>
           </Box>
           <Box
             component="form"

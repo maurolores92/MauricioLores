@@ -52,7 +52,7 @@ const Portfolio = () => {
           left: 0,
           width: "100%",
           height: "100%",
-          backgroundImage: "url('/images/fondo2.jpg')", 
+          backgroundImage: "url('/images/fondo.jpg')", 
           backgroundSize: "cover",
           backgroundPosition: "center",
           opacity: .2, 
@@ -60,7 +60,7 @@ const Portfolio = () => {
       />
         <Box sx={{ paddingTop: '4rem',  }}>
           <Typography color='white' fontWeight='900' sx={{ fontSize: { xs: '28px', lg: '48px' }, margin: '2rem auto', textAlign:'center' }}>Portfolio</Typography>
-          <Typography color='white' fontWeight='400' sx={{ maxWidth: '800px', margin: '1rem auto', textAlign:'center' }}>Bienvenido a mi portafolio, donde encontrarás una selección de mis proyectos más recientes y representativos. Cada proyecto aquí no solo es un testimonio de mis habilidades técnicas, sino también un reflejo de mi dedicación a superar desafíos con creatividad y atención al detalle. ¡Te invito a explorar y descubrir cómo puedo convertir tus ideas en realidad!</Typography>
+          <Typography color='white' fontWeight='400' sx={{ maxWidth: '800px', margin: '1rem auto', textAlign:'center', fontSize: { xs: '14px', lg: '18px' },  }}>Bienvenido a mi portafolio, donde encontrarás una selección de mis proyectos más recientes y representativos. Cada proyecto aquí no solo es un testimonio de mis habilidades técnicas, sino también un reflejo de mi dedicación a superar desafíos con creatividad y atención al detalle. ¡Te invito a explorar y descubrir cómo puedo convertir tus ideas en realidad!</Typography>
         </Box>
         <Box sx={{width: {xs: '390px', md: '800px', lg:'1400px'}, margin:'2rem auto'}}>
         <Slider {...settings}>
