@@ -61,7 +61,7 @@ const Certifications = () => {
         backgroundPosition: "center",
         alignItems: "center",
         color: "white",
-        minHeight: "100vh", 
+        minHeight: {xs:'91vh'}, 
       }}>
       <Box sx={{ paddingTop: '4rem'}}>
         <Typography color='white' fontWeight='900' sx={{ fontSize: { xs: '28px', lg: '48px' }, margin:'3rem auto', textAlign: 'center' }}>Certificaciones</Typography>
