@@ -103,7 +103,7 @@ const Footer = () => {
                 fullWidth
                 required
                 InputLabelProps={{style: {color: isFocused ? 'white' : 'white',},}} 
-                inputProps={{style: { borderColor: 'white', color: 'white' },}}
+                inputProps={{style: { border: 'solid .1px white', color: 'white' },}}
                 sx={{'& .MuiInputBase-input': {color: 'white',},}}
               />
               </Grid>
@@ -118,7 +118,7 @@ const Footer = () => {
                 fullWidth
                 required
                 InputLabelProps={{style: {color: isFocused ? 'white' : 'white',},}}
-                inputProps={{style: { borderColor: 'white', color: 'white' },}}
+                inputProps={{style: { border: 'solid .1px white', color: 'white' },}}
                 sx={{'& .MuiInputBase-input': {color: 'white',},}}
               />
               </Grid>
@@ -133,7 +133,7 @@ const Footer = () => {
                 fullWidth
                 required
                 InputLabelProps={{style: {color: isFocused ? 'white' : 'white',},}}
-                inputProps={{style: { borderColor: 'white', color: 'white' },}}
+                inputProps={{style: { border: 'solid .1px white', color: 'white' },}}
                 sx={{'& .MuiInputBase-input': {color: 'white',},}}
               />
               </Grid>
@@ -150,13 +150,12 @@ const Footer = () => {
                 fullWidth
                 required
                 InputLabelProps={{style: {color: isFocused ? 'white' : 'white',},}}
-                inputProps={{style: { color: 'white', borderColor: 'white' },}}
-                sx={{'& .MuiInputBase-input': {color: 'white',},}}
+                sx={{'& .MuiInputBase-input': {color: 'white',}, border:'solid .1px white'}}
                 variant="outlined"
               />
               </Grid>
             </Grid>
-            <Button type="submit" variant="contained" color="primary">
+            <Button type="submit" variant="contained" color="primary" sx={{marginTop:'1rem'}}>
               Enviar
             </Button>
           </Box>

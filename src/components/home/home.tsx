@@ -153,6 +153,7 @@ function HomeMauro() {
           ¡Hola! Soy Mauricio Lores, un apasionado desarrollador Front End en constante búsqueda de la excelencia. Con experiencia en Diseño UX/UI, desarrollo web, Javascript, Typescript, ReactJs y NextJs, me dedico a diseñar, rediseñar y programar proyectos innovadores y atractivos en el mundo del desarrollo web del lado del cliente. Estoy comprometido con el aprendizaje continuo y la adquisición de nuevas habilidades para mantenerme al día con las últimas tendencias y demandas tecnológicas. ¡Déjame ayudarte a llevar tus ideas al siguiente nivel!
         </Typography>
 
+        
         <Button color="primary" variant="contained" onClick={handleDownloadClick}
           sx={{
             display: 'flex',
@@ -164,7 +165,8 @@ function HomeMauro() {
             "&:hover": {
               backgroundColor: '#151f42',
               color: ' #b2b4b2',
-              border: 'solid 1px #b2b4b2'
+              border: 'solid 1px #b2b4b2',
+              scale:'1.1'
             }
           }}>
           Descargar CV

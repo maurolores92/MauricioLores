@@ -4,6 +4,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     -webkit-appearance: none;
 }
 
+
+
   .container {
     background-color: #d6dddf;
     border-radius: 12px;
@@ -68,3 +70,5 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   .mui-style-1nvnyqx-MuiPaper-root-MuiDrawer-paper {
     background-color: rgba(0, 0, 0, 0.1) ;
   }
+
+  
