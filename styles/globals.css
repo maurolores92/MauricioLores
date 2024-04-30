@@ -64,3 +64,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     filter: drop-shadow(0 10px 5px rgba(0,0,0,0.125));
     transition: all .3s ease;    
   }
+
+  .mui-style-1nvnyqx-MuiPaper-root-MuiDrawer-paper {
+    background-color: rgba(0, 0, 0, 0.1) ;
+  }

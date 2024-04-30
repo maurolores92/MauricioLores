@@ -47,7 +47,7 @@ export default function MyApp(props: MyAppProps) {
         <meta name="keywords" content="desarrollo web, diseño web, frontend, diseño de sitios web, programación web, desarrollo de aplicaciones web, tecnologías web, desarrollador frontend, diseño responsivo, HTML, CSS, JavaScript, NextJs, React, NodeJs desarrollo web a medida"/>
         <meta property="og:title" content="Desarrollador Frontend | Diseño y Programación Web | Mauricio Lores"/>
         <meta property="og:description" content="Mauricio Lores | Desarrollador Frontend - Diseñando y creando sitios web a medida para dar vida a tus ideas. Con experiencia en las últimas tecnologías y tendencias del desarrollo web, estoy aquí para ayudarte a construir una presencia en línea única y efectiva para tu proyecto o negocio." />
-        <meta property="og:image" content="/images/logo/logofondoblanco-removebg-preview.png" />
+        <meta property="og:image" content="http://imgfz.com/i/xsgHleE.png" />
         <meta property="og:url" content="https://www.mauriciolores.com.ar/" />
         <meta property="og:site_name" content="Desarrollador Frontend | Diseño y Programación Web | Mauricio Lores" />
         <meta property="og:type" content="website" />
