@@ -34,6 +34,7 @@ function HomeMauro() {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+  
 
   return (
     <Box
@@ -124,7 +125,7 @@ function HomeMauro() {
             top: "0",
             width: "100%",
             padding: "20px 0",
-            backgroundColor: "rgba(0, 0, 0, 0.2)", // Fondo transparente
+            backgroundColor: "rgba(0, 0, 0, 0.2)",
             zIndex: "999",
             display: "flex",
             justifyContent: "center",
@@ -140,9 +141,9 @@ function HomeMauro() {
 
       {/* Contenido de la página */}
       <motion.div
-        initial={{ opacity: 0, y: 50 }} // Inicialmente oculto y desplazado hacia abajo
-        animate={{ opacity: 1, y: 0 }} // Animación para aparecer y mover hacia arriba
-        transition={{ duration: 1 }} // Duración de la animación en segundos
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }} 
+        transition={{ duration: 1 }}
         style={{ maxWidth: '880px', marginTop: '6rem' }}
       >
         <Box sx={{ maxWidth: '600px', margin: '2rem auto' }}>

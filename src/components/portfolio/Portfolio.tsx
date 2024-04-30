@@ -33,16 +33,32 @@ const Portfolio = () => {
   }, []);
   
     return (
-      <>      
-      <Box sx={{ 
-        backgroundColor: '#151f42', 
-        height: "100%", 
-        display: "flex", 
-        flexDirection: "column", 
-        alignItems: 'center',
-        width: '100%'
-        }}>
-        <Box sx={{ paddingTop: '4rem', maxWidth: { md: '1000px', lg: '1200px' }, width: '100%' }}>
+      <Box
+      sx={{
+        position: "relative",
+        backgroundColor: '#0A0B0D',
+        background: `linear-gradient(to bottom, #1e2958, #151f42)`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        alignItems: "center",
+        color: "white",
+        minHeight: "100vh", 
+      }}
+    >
+      <Box
+        sx={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          width: "100%",
+          height: "100%",
+          backgroundImage: "url('/images/fondo2.jpg')", 
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          opacity: .2, 
+        }}
+      />
+        <Box sx={{ paddingTop: '4rem',  }}>
           <Typography color='white' fontWeight='900' sx={{ fontSize: { xs: '28px', lg: '48px' }, margin: '2rem auto', textAlign:'center' }}>Portfolio</Typography>
           <Typography color='white' fontWeight='400' sx={{ maxWidth: '800px', margin: '1rem auto', textAlign:'center' }}>Bienvenido a mi portafolio, donde encontrarás una selección de mis proyectos más recientes y representativos. Cada proyecto aquí no solo es un testimonio de mis habilidades técnicas, sino también un reflejo de mi dedicación a superar desafíos con creatividad y atención al detalle. ¡Te invito a explorar y descubrir cómo puedo convertir tus ideas en realidad!</Typography>
         </Box>
@@ -80,9 +96,7 @@ const Portfolio = () => {
           </Slider>
         </Box>
       </Box>
-      </>
-
-    );
-  };
+    )
+  }
   
   export default Portfolio;
