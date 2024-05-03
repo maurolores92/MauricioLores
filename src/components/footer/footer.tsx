@@ -76,10 +76,10 @@ const Footer = () => {
       paddingTop:'6rem'
     }}>
       <Box sx={{paddinTop:'4rem'}}>
-        <Typography fontSize={48} fontWeight='bold'  color={'white'} textAlign="center">Contactame</Typography>
+        <Typography fontWeight='bold'  color={'white'} textAlign="center" sx={{ fontSize: { xs: '32px', lg: '48px' }}}>Contactame</Typography>
         <Box sx={{ textAlign:'center', margin:'0 auto', justifyContent:'center'}}>
           <Box sx={{ maxWidth:'500px', margin:'2rem auto',}}>
-            <Typography  color={"white"} sx={{fontSize: { xs: '14px', lg: '18px' }, }}>No dudes en ponerte en contacto conmigo, siempre estoy dispuesto a hablar de nuevos proyectos, ideas creativas u oportunidades para participar en tus proyectos.</Typography>
+            <Typography  color={"white"} sx={{fontSize: { xs: '18px', lg: '22px' }, }}>No dudes en ponerte en contacto conmigo, siempre estoy dispuesto a hablar de nuevos proyectos, ideas creativas u oportunidades para participar en tus proyectos.</Typography>
           </Box>
           <Box
             component="form"

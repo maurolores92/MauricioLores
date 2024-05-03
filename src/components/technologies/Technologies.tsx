@@ -21,8 +21,8 @@ const Technologies = () => {
     >
         <Box sx={{paddingTop:'4rem'}}>
             <Box sx={{textAlign:'center', }}>
-            <Typography color='white' fontWeight='900' sx={{ fontSize: { xs: '24px', lg: '48px' }, margin: '2rem auto', textAlign:'center' }}>Tecnologias y herramientas</Typography>
-            <Typography color='white' fontWeight='400' sx={{ maxWidth: '800px', margin: '2rem auto', textAlign:'jutify', fontSize: { xs: '14px', lg: '18px' }, }}>Sumérgete en el mundo de las tecnologías modernas y eficientes que empleo para desarrollar sitios web y aplicaciones profesionales de alta calidad. A continuación, te presento algunas de las herramientas que utilizo para llevar a cabo proyectos innovadores y exitosos.</Typography>
+            <Typography color='white' fontWeight='900' sx={{ fontSize: { xs: '32px', lg: '48px' }, margin: '2rem auto', textAlign:'center' }}>Tecnologias y herramientas</Typography>
+            <Typography color='white' fontWeight='400' sx={{ maxWidth: '800px', margin: '2rem auto', textAlign:'jutify', fontSize: { xs: '18px', lg: '22px' }, }}>Sumérgete en el mundo de las tecnologías modernas y eficientes que empleo para desarrollar sitios web y aplicaciones profesionales de alta calidad. A continuación, te presento algunas de las herramientas que utilizo para llevar a cabo proyectos innovadores y exitosos.</Typography>
             </Box>
             <Box sx={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', maxWidth:'1100px', margin:'0 auto' }} >
                 {logosData.map((logo) => (

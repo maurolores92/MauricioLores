@@ -26,30 +26,31 @@ const Certifications = () => {
     setOpen(false);
   };
 
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToScroll: slidesToShow, // Ajustado a slidesToShow
-    slidesToShow: slidesToShow
-  };
-
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth >= 1224) {
-        setSlidesToShow(3); 
-      } else if (window.innerWidth >= 800) {
-        setSlidesToShow(2);
-      } else {
-        setSlidesToShow(1);
-      }
+      const screenWidth = window.innerWidth;
+      const cardWidth = 400;
+      const minCardsToShow = 1; 
+
+      let cardsToShow = Math.floor(screenWidth / cardWidth);
+      cardsToShow = Math.max(cardsToShow, minCardsToShow); 
+
+      setSlidesToShow(cardsToShow);
     };
+
     handleResize();
     window.addEventListener('resize', handleResize);
+
     return () => {
-      window.removeEventListener('resize', handleResize); 
+      window.removeEventListener('resize', handleResize);
     };
   }, []);
+
+  const settings = {
+    dots: true,
+    slidesToScroll: slidesToShow,
+    slidesToShow: slidesToShow
+  };
 
   return (
     <>  
@@ -64,10 +65,10 @@ const Certifications = () => {
         minHeight: {xs:'91vh'}, 
       }}>
       <Box sx={{ paddingTop: '4rem'}}>
-        <Typography color='white' fontWeight='900' sx={{ fontSize: { xs: '28px', lg: '48px' }, margin:'3rem auto', textAlign: 'center' }}>Certificaciones</Typography>
-        <Typography color='white' fontWeight='400' sx={{ maxWidth: '800px', margin:  {xs:'2rem auto', lg:'3rem auto'}, textAlign:'center', fontSize: { xs: '14px', lg: '18px' },  }}>Mi compromiso con la excelencia y el aprendizaje continuo se refleja en las certificaciones que he obtenido en el campo de la programacion. Estas certificaciones son el resultado de mi dedicación a mejorar mis habilidades y mantenerme al día con las últimas tecnologías y mejores prácticas. </Typography>
+        <Typography color='white' fontWeight='900' sx={{ fontSize: { xs: '32px', lg: '48px' }, margin:'3rem auto', textAlign: 'center' }}>Certificaciones</Typography>
+        <Typography color='white' fontWeight='400' sx={{ maxWidth: '800px', margin:  {xs:'2rem auto', lg:'3rem auto'}, textAlign:'center', fontSize: { xs: '18px', lg: '22px' },  }}>Mi compromiso con la excelencia y el aprendizaje continuo se refleja en las certificaciones que he obtenido en el campo de la programacion. Estas certificaciones son el resultado de mi dedicación a mejorar mis habilidades y mantenerme al día con las últimas tecnologías y mejores prácticas. </Typography>
       </Box>
-      <Box sx={{width: {xs: '390px', md: '800px', lg:'1400px'}, margin:'3rem auto'}}>
+      <Box sx={{ margin: '2rem auto', textAlign:'center' }}>
       <Slider {...settings}>
         {certificationsData.map((certification, index) => (
           <Box key={certification.id} style={{ marginRight: index < certificationsData.length - 1 ? '16px' : '0' }} className='card' sx={{margin:'3rem auto'}}>

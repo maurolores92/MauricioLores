@@ -12,17 +12,28 @@
     },
     {
       "id": 2,
-      "imagen": "/images/lacostillita.svg",
+      "imagen": "/images/woolandcrochet.png",
       "date": "01.11.2022",
-      "title": "La Costillita",
-      "description": "Pagina web creada para nuestros clientes de Parrillas La Costillita.",
-      "route": "https://lacostillita.com/",
+      "title": "Wool and Crochet",
+      "description": "Pagina web creada para nuestros clientes de Wool and Crochet.",
+      "route": "https://www.woolandcrochet.shop/",
       "labels": {
         "labels1":"Wordpress", "labels2":"PHP"
       }
     },
     {
       "id": 3,
+      "imagen": "/images/lacostillita.svg",
+      "date": "01.11.2022",
+      "title": "La Costillita",
+      "description": "Pagina web creada para nuestros clientes de Parrillas La Costillita.",
+      "route": "https://lacostillita.com.ar/",
+      "labels": {
+        "labels1":"Wordpress", "labels2":"PHP"
+      }
+    },
+    {
+      "id": 4,
       "imagen": "/images/Indexfixitpc.svg",
       "date": "01.11.2022",
       "title": "Fix it PC",
@@ -33,7 +44,7 @@
       }
     },
     {
-      "id": 4,
+      "id": 5,
       "imagen": "/images/GammingStore..svg",
       "date": "02.01.2023",
       "title": "Gamming Store",
