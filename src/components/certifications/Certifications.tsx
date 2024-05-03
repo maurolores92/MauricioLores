@@ -68,7 +68,7 @@ const Certifications = () => {
         <Typography color='white' fontWeight='900' sx={{ fontSize: { xs: '32px', lg: '48px' }, margin:'3rem auto', textAlign: 'center' }}>Certificaciones</Typography>
         <Typography color='white' fontWeight='400' sx={{ maxWidth: '800px', margin:  {xs:'2rem auto', lg:'3rem auto'}, textAlign:'center', fontSize: { xs: '18px', lg: '22px' },  }}>Mi compromiso con la excelencia y el aprendizaje continuo se refleja en las certificaciones que he obtenido en el campo de la programacion. Estas certificaciones son el resultado de mi dedicación a mejorar mis habilidades y mantenerme al día con las últimas tecnologías y mejores prácticas. </Typography>
       </Box>
-      <Box sx={{ margin: '2rem auto', textAlign:'center' }}>
+      <Box sx={{  textAlign:'center' }}>
       <Slider {...settings}>
         {certificationsData.map((certification, index) => (
           <Box key={certification.id} style={{ marginRight: index < certificationsData.length - 1 ? '16px' : '0' }} className='card' sx={{margin:'3rem auto'}}>

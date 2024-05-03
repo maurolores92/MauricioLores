@@ -58,18 +58,19 @@ const Portfolio = () => {
           backgroundSize: "cover",
           backgroundPosition: "center",
           opacity: .2,
+          
         }}
       />
       <Box sx={{ paddingTop: '4rem', }}>
         <Typography color='white' fontWeight='900' sx={{ fontSize: { xs: '32px', lg: '48px' }, margin: '2rem auto', textAlign: 'center' }}>Portfolio</Typography>
         <Typography color='white' fontWeight='400' sx={{ maxWidth: '800px', margin: '1rem auto', textAlign: 'center', fontSize: { xs: '18px', lg: '22px' }, }}>Bienvenido a mi portafolio, donde encontrarás una selección de mis proyectos más recientes y representativos. Cada proyecto aquí no solo es un testimonio de mis habilidades técnicas, sino también un reflejo de mi dedicación a superar desafíos con creatividad y atención al detalle. ¡Te invito a explorar y descubrir cómo puedo convertir tus ideas en realidad!</Typography>
       </Box>
-      <Box sx={{ margin: '2rem auto', textAlign:'center' }}>
+      <Box sx={{ textAlign:'center',  }}>
         <Slider {...settings}>
           {portfolioData.map((servicio, index) => (
             <Card key={servicio.id} sx={{ margin: '1rem auto', borderRadius: '12px', width: '380px', height: '463px' }} className="container">
               <Box sx={{ position: 'relative' }}>
-                <img src={servicio.imagen} alt={servicio.title} style={{ width: '320px', height: '200px', borderRadius: '12px', margin: '1rem auto' }} />
+                <img src={servicio.imagen} alt={servicio.title} style={{ width: '320px', height: '180px', borderRadius: '12px', margin: '1rem auto' }} />
               </Box>
               <CardContent>
                 <Box sx={{ height: '240px' }}>
