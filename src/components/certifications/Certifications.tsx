@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { Typography, Box, Dialog, DialogContent, Button } from '@mui/material';
 import certificationsData from './certifications.json';
 import Slider from 'react-slick';
+import Image from 'next/image';
 
 type Certification = {
   id: number;
@@ -73,7 +74,7 @@ const Certifications = () => {
         {certificationsData.map((certification, index) => (
           <Box key={certification.id} style={{ marginRight: index < certificationsData.length - 1 ? '16px' : '0' }} className='card' sx={{margin:'3rem auto'}}>
             <div onClick={() => handleClickOpen(certification)} style={{ cursor: 'pointer' }}>
-              <img src={certification.imagen} alt={certification.title} style={{ width: '280px', height: '200px', borderRadius: '12px', margin: '3rem auto' }} />
+              <Image src={certification.imagen} alt={certification.title}  width={280} height={200} style={{ borderRadius: '12px', margin: '3rem auto' }} />
             </div>
           </Box>
         ))}

@@ -4,7 +4,6 @@ import Portfolio from "../src/components/portfolio/Portfolio";
 import Technologies from "../src/components/technologies/Technologies";
 import Footer from "../src/components/footer/footer";
 import Certifications from "../src/components/certifications/Certifications";
-import { SpeedInsights } from "@vercel/speed-insights/next";
 
 function Home() {
 
@@ -16,7 +15,6 @@ function Home() {
       <Portfolio/>
       <Certifications/>
       <Footer/>
-      <SpeedInsights/>
       </>
   );
 }

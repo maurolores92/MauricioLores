@@ -4,6 +4,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import portfolioData from './portfolio.json';
 import { Card, CardContent, Typography, Box, Button } from '@mui/material';
+import Image from 'next/image';
 
 const Portfolio = () => {
   const [slidesToShow, setSlidesToShow] = useState(1);
@@ -54,7 +55,7 @@ const Portfolio = () => {
           left: 0,
           width: "100%",
           height: "100%",
-          backgroundImage: "url('/images/fondo.jpg')",
+          backgroundImage: "url('/images/fondo.webp')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           opacity: .2,
@@ -70,7 +71,7 @@ const Portfolio = () => {
           {portfolioData.map((servicio, index) => (
             <Card key={servicio.id} sx={{ margin: '1rem auto', borderRadius: '12px', width: '380px', height: '463px' }} className="container">
               <Box sx={{ position: 'relative' }}>
-                <img src={servicio.imagen} alt={servicio.title} style={{ width: '320px', height: '180px', borderRadius: '12px', margin: '1rem auto' }} />
+                <Image src={servicio.imagen} alt={servicio.title} width={320} height={180} style={{borderRadius: '12px', margin: '1rem auto' }} />
               </Box>
               <CardContent>
                 <Box sx={{ height: '240px' }}>

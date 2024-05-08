@@ -1,7 +1,7 @@
 [
     {
       "id": 1,
-      "imagen": "/images/thewinenation.svg",
+      "imagen": "/images/portfolio/thewinenation.webp",
       "date": "01.11.2022",
       "title": "The Wine Nation",
       "description": "Pagina web creada para nuestros clientes de The Wine Nation.",
@@ -12,7 +12,7 @@
     },
     {
       "id": 2,
-      "imagen": "/images/woolandcrochet.png",
+      "imagen": "/images/portfolio/woolandcrochet.webp",
       "date": "01.11.2022",
       "title": "Wool and Crochet",
       "description": "Pagina web creada para nuestros clientes de Wool and Crochet.",
@@ -23,7 +23,7 @@
     },
     {
       "id": 3,
-      "imagen": "/images/lacostillita.svg",
+      "imagen": "/images/portfolio/lacostillita.webp",
       "date": "01.11.2022",
       "title": "La Costillita",
       "description": "Pagina web creada para nuestros clientes de Parrillas La Costillita.",
@@ -34,7 +34,7 @@
     },
     {
       "id": 4,
-      "imagen": "/images/Indexfixitpc.svg",
+      "imagen": "/images/portfolio/Indexfixitpc.webp",
       "date": "01.11.2022",
       "title": "Fix it PC",
       "description": "Diseño y desarrollo de pagina web para la marca FixItPC Punto Fijo.",
@@ -45,7 +45,7 @@
     },
     {
       "id": 5,
-      "imagen": "/images/GammingStore..svg",
+      "imagen": "/images/portfolio/GammingStore..webp",
       "date": "02.01.2023",
       "title": "Gamming Store",
       "description": "Ecommerce creado como proyecto final en el curso de ReactJs",
@@ -56,7 +56,7 @@
     },
     {
       "id": 6,
-      "imagen": "/images/TECHapp.svg",
+      "imagen": "/images/portfolio/TECHapp.webp",
       "date": "23.04.2023",
       "title": "TECHapp",
       "description": "Creado como proyecto durante el curso de Diseño UX/UI",

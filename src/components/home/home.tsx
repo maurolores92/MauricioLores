@@ -58,7 +58,7 @@ function HomeMauro() {
           left: 0,
           width: "100%",
           height: "100%",
-          backgroundImage: "url('/images/fondo.jpg')", 
+          backgroundImage: "url('/images/fondo.webp')", 
           backgroundSize: "cover",
           backgroundPosition: "center",
           opacity: .3, 
@@ -146,8 +146,8 @@ function HomeMauro() {
         transition={{ duration: 1 }}
         style={{ maxWidth: '880px', marginTop: '2rem' }}
       >
-        <Box sx={{ maxWidth: '600px', margin: '3rem auto' }}>
-          <img src="images/logo/logo-transparente.svg " alt="" />
+        <Box sx={{maxWidth: '600px', margin: '3rem auto', }}>
+          <img src="images/logo/logo-transparente.svg " alt="" style={{width: '100%', height:'100%' }}/>
         </Box>
 
         <Typography fontWeight="bold" sx={{ textAlign: 'center', margin: '3rem auto', fontSize: { xs: '22px', md: '26px  ' } }}>

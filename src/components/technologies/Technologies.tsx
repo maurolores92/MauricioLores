@@ -2,9 +2,20 @@ import { Box, Typography } from "@mui/material";
 import logosData from './logos.json';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { motion } from "framer-motion";
+import Image from 'next/image';
+import { useEffect } from "react";
+import lozad from 'lozad';
 
 const Technologies = () => {
     const isMobile = useMediaQuery('(max-width:800px)');
+
+    useEffect(() => {
+        const observer = lozad('.lozad', {
+            rootMargin: '50px 0px', 
+            threshold: 0.1,
+        });
+        observer.observe();
+    }, []);
 
     return (
         <Box
@@ -29,9 +40,10 @@ const Technologies = () => {
                     <Box key={logo.id}>
                         <Box sx={{borderRadius: '6%', marginTop:'2rem' }} >
                             <motion.div animate={{ x: [null, 100, 0] }}>
-                                <img src={logo.logoSrc} alt={logo.nombre} style={{width: isMobile ? '60px' : '100px'}}/>
+                            <Image src={logo.logoSrc} alt={logo.nombre} width={isMobile ? 60 : 100} height={isMobile ? 60 : 100} className="lozad" />
                             </motion.div>
                         </Box>
+
                         
                     </Box>
                 ))}
